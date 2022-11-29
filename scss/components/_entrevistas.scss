@@ -1,0 +1,65 @@
+
+.entrevistas-div1{
+    @extend %sub-headings;
+}
+.notas{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        margin: 5%;
+        height: 250px;
+        width: 40%;
+        border: solid 4px $color-green-femi;
+        @media screen and (max-width: 720px) { // al max de esta query habra una columna de cards
+            width: 100%;
+            height: 290px;
+        }
+        img{
+            opacity: 25%;
+            height: 100%;
+            width: 100%;
+        }
+        .card-img-overlay{
+            height: 100%;
+            width: 100%;
+            font-family: Inter, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            small{
+                font-size: 10px;
+                position: absolute;
+                    top: 2%;
+                    left: 2%;
+            }
+            .card-title{
+                font-size: 27px;
+                color: $color-green-femi;
+            }
+            .card-text{
+                font-size: 1rem;
+            }
+            a{
+                color: $color-green-femi;
+                display: block;
+                padding: 15px;
+                border: 3px solid $color-green-femi;
+                font-size: 15px;
+                &:hover{
+                    background-color:$color-green-femi ;
+                    color: white;
+                }
+            }
+            @media screen and (max-width: 980px) {
+                .card-title{
+                    font-size: 25px;
+                }
+                .card-text{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

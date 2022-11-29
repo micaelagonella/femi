@@ -1,0 +1,29 @@
+%flexbox-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+%flexbox-sb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%sub-headings {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20%;
+    border-bottom: 10px solid $color-green-femi;
+    @media screen and (max-width: 480px){
+        border-bottom: 5px solid $color-green-femi;
+        margin-top: 25%;
+    }
+    @media screen and (max-width: 920px){
+        border-bottom: 7px solid $color-green-femi;
+    }
+    @media screen and (min-width: 980px){
+        margin-top: 7%;
+    }
+}

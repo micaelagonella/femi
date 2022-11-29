@@ -1,0 +1,17 @@
+
+
+.congresos-div1{
+    @extend %sub-headings;
+}
+.list-group-item{
+    &+.list-group-item{
+        border-top: 3px solid $color-green-femi;
+    }
+        border: 3px solid $color-green-femi;
+        box-shadow: none;
+        &:hover{
+            background-color: $color-green-femi;
+            color: white;
+        }
+}
+

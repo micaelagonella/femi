@@ -1,0 +1,6 @@
+@mixin integrante ($flex, $direccion, $margen, $alineacion){
+    display: $flex;
+    flex-direction: $direccion; 
+    margin: $margen; 
+    align-items: $alineacion; 
+}

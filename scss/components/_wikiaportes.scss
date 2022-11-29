@@ -1,0 +1,46 @@
+
+
+.wikiaportes-div1{
+    @extend %sub-headings;
+}
+
+    
+h3{
+    margin: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 5%;
+    @media screen and (max-width: 760px) {
+        font-size:18px;
+    }
+}
+    
+.list-group{
+        margin: 5% 7%;
+        border-radius: .5rem;
+        &-item{
+            margin: 0.8% 0.8% 3% 0.8%;
+            border-radius: .5rem;
+            border: none;
+            background-color: $color-green-background;
+            box-shadow: 10px 18px 25px -7px rgba(150,150,150,0.97);
+            @media screen and (max-width: 760px) {
+                h5.mb-1{
+                    font-size: 18px!important;
+                }
+            }
+            &:hover{
+                background-color: $color-green-femi;
+                color: $color-green-yellow-femi;
+            }
+            .descriptivo{
+                margin-left: 1%;
+            }
+        }
+}
+.swal2-close:hover {
+        transform: none;
+        background: 0 0;
+        color: #874F9D;
+}
+
